@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapClient from './BootstrapClient';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +29,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+      {/* <body className="min-h-full flex flex-col">{children}</body> */}
+      <body style={{ backgroundColor: '#E5ECF4' }}>{children}</body>
+      <BootstrapClient />
+    </html >
   );
 }

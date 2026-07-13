@@ -1,9 +1,10 @@
-import Image from "next/image";
+
+import Login from "./(auth)/login/page";
 
 export default function Home() {
   return (
     <>
-      <h1>Hello SSK MACT SOCIETY LTD</h1>
+      <Login />
     </>
   );
 }
