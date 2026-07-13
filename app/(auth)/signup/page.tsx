@@ -1,5 +1,3 @@
-import Image from "next/image";
-import logo from "../../../public/Wavy_Bus-27_Single-10.jpg";
 
 function Signup() {
     return (
