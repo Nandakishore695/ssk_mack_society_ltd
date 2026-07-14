@@ -1,12 +1,15 @@
-import Dashboard from "./dashboard/page";
 import Header from "./header/page";
 
-function HomePage() {
+function HomePage({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
 
     return (
         <>
             <Header />
-            <Dashboard />
+            <div>{children}</div>
         </>
     )
 }
