@@ -1,9 +1,8 @@
-
-
-export default function Dashboard() {
-    return (
+function Header(){
+    return(
         <>
-            <Dashboard />
+        
         </>
-    );
+    )
 }
+export default Header

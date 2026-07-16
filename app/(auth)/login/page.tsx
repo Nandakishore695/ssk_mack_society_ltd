@@ -1,12 +1,21 @@
+'use client'
 import Image from "next/image";
 import logo from "../../../public/Wavy_Bus-27_Single-10.jpg";
+import { useRouter } from "next/navigation";
 
 function Login() {
+    const router = useRouter();
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+        router.push('/membership-list')
+    }
+    
     return (
         <div className="container col-xxl-8 px-4 py-5">
             <div className="row flex-lg-row-reverse align-items-center bg-white border rounded-3 py-5">
                 <div className="col-md-10 mx-auto col-lg-5">
-                    <form className="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <form className="p-4 p-md-5 border rounded-3 bg-body-tertiary" onSubmit={handleLogin}>
                         <h1>Welcome!</h1>
                         <small className="text-body-secondary">
                             Login to your account to continue.

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 function Signup() {
     return (
@@ -25,18 +26,14 @@ function Signup() {
                             </label>
                         </div>
                          <small className="text-body-secondary my-4">
-                            Already have an account? <a href="/login" className="text-decoration-none">Login</a>
+                            Already have an account? <Link href="/login" className="text-decoration-none">Login</Link>
                         </small>
 
                         <button className="w-100 btn btn-lg btn-primary mt-3" type="submit">
                             Sign Up
                         </button>
-                       
                     </form>
                 </div>
-                {/* <div className="col-10 col-sm-8 col-lg-6">
-                    <Image src={logo} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
-                </div> */}
             </div>
         </div>
     )

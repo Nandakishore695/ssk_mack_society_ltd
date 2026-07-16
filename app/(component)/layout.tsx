@@ -6,6 +6,7 @@ function HomePage({
     children: React.ReactNode;
 }>) {
 
+   
     return (
         <>
             <Header />
